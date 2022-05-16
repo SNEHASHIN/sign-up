@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form{
+      text-align: left;
+      
+  }
+  fieldset{
+      border: 1px solid;
+      width: 20%;
+      float: center;
+  }
+  textarea{
+      width: 200px;height: 80px;
+          }     
+      </style>
+</head>
+<body>
+      <fieldset><legend>signup form</legend>
+    <form action="/action.page.js">
+
+        <lable>Name*<br>
+<input type="text" name="fname" placeholder="first name">
+<input type="text" name="lname" placeholder="last name">
+      </lable><br><br>
+      <lable>Email*<br>
+<input type="email" name="email" placeholder="abc@gmail.com">
+      </lable><br><br>
+      <lable>Password*<br>
+<input type="password" name="pass" maxlength="8">
+      </lable><br><br>
+      <label>Gender*<br>
+<input type="radio" name="gender">male<br>
+<input type="radio" name="gender">female<br>
+<input type="radio" name="gender">other<br>
+      </label><br>
+      <lable>Language Known*<br>
+<input type="checkbox" name="check" placeholder="checkbox">html<br>
+<input type="checkbox" name="check" placeholder="checkbox">css<br>
+<input type="checkbox" name="check" placeholder="checkbox">javascript<br>
+      </lable><br>
+      <label>Experience level*<br>
+<input list="experience" name="experience" placeholder="experience">
+<datalist id="experience">
+      <option value="beginner">beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="advance">advance</option>
+</datalist><br>
+      </label><br>
+      <label>Tell us something about you*<br>
+<textarea name="about" type="about" placeholder="tell us something about you" maxlength="40 words"></textarea><br>           
+      </label><br><br>
+      <label><input type="checkbox" name="tc" value="tc">I accept all the<a href="#">T&C</a><br></label>
+      <input type="submit" name="submit" value="submit">
+    
+    </form>
+    </fieldset>
+</body>
+</html>
